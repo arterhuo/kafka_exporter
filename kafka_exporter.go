@@ -477,8 +477,6 @@ func main() {
 		"Oldest Offset of a Broker at Topic/Partition",
 		[]string{"topic", "partition"}, labels,
 	)
-	s
-
 
 	consumergroupCurrentOffset = prometheus.NewDesc(
 		prometheus.BuildFQName(namespace, "consumergroup", "current_offset"),
